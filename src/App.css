@@ -1,42 +1,39 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Navbar Stylings */
+
+.text-green {
+    color: #61AF84;
+    font-weight: 500 !important;
+    transition: all;
+    transition-duration: .6s;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.text-green:hover {
+    color: #ED4947;
+
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active-page-text {
+    color: #ED4947;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+/* Home Page Style */
 
-.card {
-  padding: 2em;
+/* banner */
+.banner-wrapper{
+    border-radius: 70px;
+    background: url("./assets/bannerImg//banner_1.png") no-repeat center;
+    background-size: cover;
+    background-blend-mode:lighten;
 }
-
-.read-the-docs {
-  color: #888;
+.banner-wrapper>div>h1{
+    color: #B5C9DD;
+}
+.banner-wrapper>div>h2{
+    color: #F3C553;
+}
+.bg-green{
+    background-color: #61AF84;
+}
+.bg-green:hover{
+    background-color: #f07c7a;
 }
