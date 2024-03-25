@@ -16,24 +16,38 @@
     color: #ED4947;
 }
 
-/* Home Page Style */
-
-/* banner */
-.banner-wrapper{
-    border-radius: 70px;
-    background: url("./assets/bannerImg//banner_1.png") no-repeat center;
-    background-size: cover;
-    background-blend-mode:lighten;
-}
-.banner-wrapper>div>h1{
-    color: #B5C9DD;
-}
-.banner-wrapper>div>h2{
-    color: #F3C553;
-}
-.bg-green{
+.bg-green {
+    color: white;
+    width: fit-content;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
     background-color: #61AF84;
 }
-.bg-green:hover{
+
+.bg-green:hover {
     background-color: #f07c7a;
+}
+
+.box-shadow {
+    box-shadow: 10px 10px 13px 1px grey;
+}
+
+.footer-bg{
+    background-color: #C4C4C4;
+    line-height: 30px;
+}
+/* Banner Styling */
+
+.text-color-green{
+    color: #399B65;
+}
+
+.text-primary{
+    color: hwb(209 27% 34%);
+}
+.text-lighter{
+    color:#B5C9DD;
+}
+.text-dark-blue{
+    color: #2A4965;
 }

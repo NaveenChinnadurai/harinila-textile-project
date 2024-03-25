@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 ;
 }
 
 li{
@@ -10,4 +10,18 @@ li{
 
 .w-fit{
     width: fit-content;
+}
+.h-fit{
+    height: fit-content;
+}
+.w-screen{
+    width: 100vw;
+}
+
+.fs-19{
+    font-size: 19px;
+}
+
+b{
+    font-weight: bold;
 }
