@@ -14,13 +14,6 @@ li{
 .h-fit{
     height: fit-content;
 }
-.w-screen{
-    width: 100vw;
-}
-
-.fs-19{
-    font-size: 19px;
-}
 
 b{
     font-weight: bold;
