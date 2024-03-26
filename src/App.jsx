@@ -6,11 +6,11 @@ import Footer from './components/footer';
 function App() {
 
   return (
-   <>
-   <Navbar/>
-   <Home/>
-   <Footer/>
-   </>
+    <div className='py-5'>
+      <Navbar />
+      <Home />
+      <Footer />
+    </div>
   )
 }
 

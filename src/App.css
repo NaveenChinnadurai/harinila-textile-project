@@ -9,14 +9,14 @@
 
 .text-green:hover {
     color: #ED4947;
-
 }
 
-.active-page-text {
+.text-orange {
     color: #ED4947;
 }
 
 .bg-green {
+    cursor: pointer;
     color: white;
     width: fit-content;
     padding: 0.5rem 1.5rem;
@@ -29,25 +29,28 @@
 }
 
 .box-shadow {
-    box-shadow: 10px 10px 13px 1px grey;
+    box-shadow: 8px 8px 8px 1px rgb(241, 241, 241);
 }
 
 .footer-bg{
     background-color: #C4C4C4;
     line-height: 30px;
 }
-/* Banner Styling */
 
-.text-color-green{
-    color: #399B65;
+/* about Count Stylings */
+
+.count-box-shadow {
+    background-color: #f7f7f7;
+    box-shadow: -5px 5px 10px 0px rgb(221, 221, 221);
 }
 
-.text-primary{
-    color: hwb(209 27% 34%);
+/* Input Form */
+
+input,textarea{
+    outline: none;
+    border:solid 1px rgb(107, 107, 107);
+    background-color: #EFEFEF;
 }
-.text-lighter{
-    color:#B5C9DD;
-}
-.text-dark-blue{
-    color: #2A4965;
+textarea{
+    height: 100px;
 }

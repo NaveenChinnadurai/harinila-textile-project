@@ -18,3 +18,23 @@ li{
 b{
     font-weight: bold;
 }
+
+/* Title colors */
+.title-primary-1{
+    color: hwb(209 27% 34%);
+}
+.title-primary-2{
+    color: #2A4965;
+}
+.title-primary-3{
+    color:#B5C9DD;
+}
+.title-primary-4{
+    color: #6B94BA;
+}
+.title-primary-5{
+    color: #4679A9;
+}
+.title-primary-6{
+    color: #399B65;
+}
