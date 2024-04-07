@@ -6,7 +6,7 @@ import Footer from './components/footer';
 function App() {
 
   return (
-    <div className='py-5'>
+    <div className='py-3'>
       <Navbar />
       <Home />
       <Footer />

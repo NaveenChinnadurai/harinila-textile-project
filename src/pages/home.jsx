@@ -62,7 +62,7 @@ function Home() {
             <div className="row col-12 px-0 mx-auto d-flex flex-column flex-md-row justify-content-evenly justify-content-ld-between align-items-center my-4">
                 <div className='col-12 col-md-7 col-lg-6 d-flex flex-column gap-2'>
                     <h2 className="lead fs-3 fw-bold title-primary-2">WHAT WE DO</h2>
-                    <h1 className="lead display-6 fw-bold title-primary-1 px-3 border-start border-5">Harinila Textiles, beyond exports we are working as multifunctional company</h1>
+                    <h1 className="lead display-6 fw-bold title-primary-1 px-2 ms-3 ms-md-0 border-start border-5">Harinila Textiles, beyond exports we are working as multifunctional company</h1>
                     <div className='d-block d-md-none col-10 col-sm-7 mx-auto p-5'>
                         <img src={aboutImg} alt="About Image" className='img-fluid ' />
                     </div>
@@ -73,7 +73,7 @@ function Home() {
                 </div>
             </div>
             <div className="row col-12 d-flex flex-column">
-                <div className='row col-12 d-flex justify-content-center'>
+                <div className='row col-12 d-flex gap-2 justify-content-center'>
                     <h2 className="w-fit lead fs-3 fw-normal title-primary-1 fw-medium m-0 pe-1">We develop modern production of </h2>
                     <div className='w-fit pt-4 px-2 border-start border-5'>
                         <span className='lead fs-1 fw-bolder title-primary-1 fw-bolder'>Fabrics & Cottons</span>
@@ -82,14 +82,15 @@ function Home() {
                 <div className='col-12 row container-fluid'>
                     {
                         productInfo.map((e, i) => {
+                            const align = i % 2
                             return (
-                                <div key={i} className={`row col-12 d-flex w-screen justify-content-md-center justify-content-lg-evenly align-items-center px-md-5 ${i % 2 != 0 ? "flex-row-reverse" : ""}`}>
-                                    <div className="col-10 col-sm-8 col-md-5 my-5 p-6 d-flex justify-content-center align-items-center">
+                                <div key={i} className={`row col-12 d-flex w-screen justify-content-md-center justify-content-lg-evenly align-items-center px-md-5 ${align != 0 ? "flex-row-reverse" : ""}`}>
+                                    <div className="col-10 col-sm-8 col-md-5 col-lg-4 my-5 p-6 d-flex justify-content-center align-items-center">
                                         <img src={e.img} alt="product Image" className='img-fluid' />
                                     </div>
-                                    <div className="col-12 col-md-7 col-lg-5 col-6 d-flex gap-2 flex-column">
+                                    <div className={`col-12 col-md-7 col-lg-5 col-6 d-flex gap-2 flex-column ${align!=0?"align-items-end align-items-md-start":""}`}>
                                         <h2 className="lead fs-2 fw-bold title-primary-2">{e.title}</h2>
-                                        <p className="lead fs-5 fw-normal">{e.para}</p>
+                                        <p className={`lead fs-5 fw-normal ${align!=0?"text-end text-md-start":""}`}>{e.para}</p>
                                         <span className="bg-green px-5 mt-2">Know More</span>
                                     </div>
                                 </div>
@@ -122,10 +123,20 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <div className='row p-0 col-12 py-2 my-3 d-flex gap-2 justify-content-center align-items-center'>
+                <h2 className="mb-2 lead display-6 title-primary-2 text-center fw-bold">Get in Touch With Us</h2>
+                <div className="row col-12 d-flex flex-wrap gap-2 gap-md-0 justify-content-evenly align-items-">
+                    <ContactCard icon={icon1} title="Office Hours" para="Mon - Sat: 9:30 AM to 6:30PM" />
+                    <ContactCard icon={icon3} title="Write Us On" para="harinilatextiles@gmail.com" />
+                </div>
+                <div className='row col-12 d-flex flex-wrap gap-2 gap-md-0 justify-content-evenly'>
+                    <ContactCard icon={icon2} title="Reach Us At" para="#12, 1st St Jayabharathi Nagar," para1="Porur, Chennai - 600116, India" class="col-sm-8" />
+                </div>
+            </div>
             <div className='col-12 mx-auto d-flex justify-content-center justify-content-lg- align-items-center p-2'>
                 <div className="col-12 col-sm-10 col-md-5 p-3 row d-flex justify-content-center gap-3">
                     <h2 className="lead fs-2 fw-bold title-primary-5 d-flex">
-                        Let's Connect 
+                        Let's Connect
                         <img src={chainIcon} alt="Chain Icon" height={40} />
                     </h2>
                     <input type="text" className='h-fit col-5 p-1 px-2 rounded-2' placeholder='First Name' />
@@ -138,16 +149,6 @@ function Home() {
                 </div>
                 <div className="col-4 col-sm-5 col-lg-4 row p-lg-3 d-none d-md-flex">
                     <img src={formImg} alt="Form Image" className='img-fluid' />
-                </div>
-            </div>
-            <div className='row p-0 col-12 py-2 my-3 d-flex gap-2 justify-content-center align-items-center'>
-                <h2 className="mb-2 lead display-6 title-primary-2 text-center fw-bold">Get in Touch With Us</h2>
-                <div className="row col-12 d-flex flex-wrap gap-2 gap-md-0 justify-content-evenly align-items-">
-                    <ContactCard icon={icon1} title="Office Hours" para="Mon - Sat: 9:30 AM to 6:30PM" />
-                    <ContactCard icon={icon3} title="Write Us On" para="harinilatextiles@gmail.com" />
-                </div>
-                <div className='row col-12 d-flex flex-wrap gap-2 gap-md-0 justify-content-evenly'>
-                    <ContactCard icon={icon2} title="Reach Us At" para="#12, 1st St Jayabharathi Nagar," para1="Porur, Chennai - 600116, India" class="col-sm-8" />
                 </div>
             </div>
         </div>
