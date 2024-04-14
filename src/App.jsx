@@ -4,15 +4,21 @@ import Navbar from './components/navbar';
 import Home from './pages/home';
 import Footer from './components/footer';
 import ProductPage from './pages/productPage';
-import { Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes } from 'react-router-dom';
+import Contact from './pages/contact';
+import WA from './assets/Icons/whatsapp.png'
 function App() {
 
   return (
     <div className='py-3'>
+      <Link to="https://wa.me/918098150750" target="_blank" className='position-fixed p-2 z-3  bg-transparent rounded-circle whatsapp-icon'>
+        <img src={WA} alt="Whatsapp Icon" className='img-fluid'/>
+      </Link>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/productPage' element={<ProductPage/>}/>
+        <Route path='/contactUs' element={<Contact/>}/>
       </Routes>
       <Footer />
     </div>

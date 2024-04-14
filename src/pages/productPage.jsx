@@ -50,11 +50,11 @@ function ProductPage() {
                 <div className='position-relative pt-3'>
                     <img src={bannerImg} alt="Banner Image" className=' img-fluid' />
                     <div className='position-absolute d-flex flex-column align-items-center text-white w-100 product-banner-text'>
-                        <h2 className="fs-1 text-center">Welcome to Harinila Textiles! <br /> Sustainable Cotton Yarns & Fabrics</h2>
-                        <h2 className="fs-5">Innovation in your business starts here</h2>
+                        <h2 className="fs-1 fw-bold text-center">Welcome to Harinila Textiles! <br /> Sustainable Cotton Yarns & Fabrics</h2>
+                        <h2 className="fs-5 text-center">Innovation in your business starts here</h2>
                     </div>
                 </div>
-                <p className="lead col-10 text-center m-auto fw-normal my-4 fs-5">We are a leading supplier of <span className='fw-bold'>premium quality cotton yarn </span>for the global market. With our commitment to excellence and customer satisfaction, we have established ourselves as a trusted partner in the textile industry. Whether you are a garment manufacturer, a wholesaler, or a textile company, <span className='fw-bold'>we have the right cotton yarn to meet your needs.</span></p>
+                <p className="lead col-md-10 text-center m-auto fw-normal my-4 fs-5">We are a leading supplier of <span className='fw-bold'>premium quality cotton yarn </span>for the global market. With our commitment to excellence and customer satisfaction, we have established ourselves as a trusted partner in the textile industry. Whether you are a garment manufacturer, a wholesaler, or a textile company, <span className='fw-bold'>we have the right cotton yarn to meet your needs.</span></p>
             </div>
             <div className="row col-12 p-0 py-3 position-relative">
                 <div className="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto z-2">
@@ -64,7 +64,7 @@ function ProductPage() {
                 <div className="product-decor d-none d-md-flex product-decor-bottom col-5 position-absolute end-0 "></div>
             </div>
             <p className="lead fs-4 fw-normal text-center col-md-8 mx-auto">Our extensive range of cotton yarns is meticulously crafted to meet the highest industry standards, ensuring superior quality and performance in every strand. <b>From fine counts for delicate fabrics to robust options for durable textiles,</b>we offer versatile solutions tailored to your specific requirements. Partner with us and experience the difference that premium <b>quality cotton yarn can make in your products.</b></p>
-            <div className='col-md-11 mx-auto d-flex flex-column gap-md-5 p-3'>
+            <div className='col-md-11 mx-auto d-flex flex-column gap-md-5 gap-3 p-3'>
                 <h2 className="display-5 text-green fw-bold">Benefits of Choosing us <RightArrow/> </h2>
                 <div className='p-md-3 d-flex flex-column gap-5'>
                     {
@@ -77,7 +77,7 @@ function ProductPage() {
                                             <img src={e.img} alt={e.title} className=' img-fluid' />
                                         </div>
                                     </div>
-                                    <div className='position-absolute opacity-0 feature-info p-md-3 bg-white h-100 top-0 d-flex align-items-center'>
+                                    <div className='position-absolute opacity-0 feature-info p-md-3 p-2  bg-white h-100 top-0 d-flex align-items-center'>
                                         <p className="lead fs-4 text-center fw-medium title-primary-4">{e.text}</p>
                                     </div>
                                 </div>

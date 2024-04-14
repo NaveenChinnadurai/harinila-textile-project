@@ -1,3 +1,15 @@
+/* Whatsapp style */
+.whatsapp-icon{
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    cursor: pointer;
+}
+@media screen and (max-width:576px) {
+    .whatsapp-icon{
+        width: 60px;
+    }
+}
 /* Navbar Stylings */
 .navbar-mobile{
     background-color: #ebfff5;
@@ -95,4 +107,11 @@ textarea{
     opacity: 1 !important;
     border: dotted 1px rgb(226, 226, 226);
     box-shadow: 0 0 30px 15px whitesmoke;
+}
+
+/* contact page */
+.contact-bg{
+    background: url("./assets/world.jpg") center;
+    background-size: cover;
+    height: 100vh;
 }

@@ -3,14 +3,13 @@ import { IoIosArrowForward as Arrow } from "react-icons/io";
 import bannerImg from '../assets/bannerImg/banner_1.png'
 import aboutImg from '../assets/aboutImg.png'
 import aboutImg1 from '../assets/aboutImg1.png'
-import formImg from '../assets/formImg.png'
+
 import wovenFabric from '../assets/productImages/wovenFabric.png'
 import cottonYarn from '../assets/productImages/cottonYarn.png'
 import knittedFabric from '../assets/productImages/knittedFabric.png'
 import icon1 from '../assets/Icons/icon1.png'
 import icon2 from '../assets/Icons/icon2.png'
 import icon3 from '../assets/Icons/icon3.png'
-import chainIcon from '../assets/Icons/chainIcon.png'
 import Header from '../components/header';
 const productInfo = [
     {
@@ -106,16 +105,16 @@ function Home() {
                     <h1 className="lead fs-1 fw-bold title-primary-1">Discover Deeper Insights into Harinila Textiles</h1>
                     <p className='lead fs-5 fw-normal'>At Harinila Textiles, we transcend traditional exports, serving as a dynamic enterprise. We're collaborative innovators, guiding creation, commercialization, marketing, and sourcing in the Textiles and Technical Textiles Value Chain. Our impact extends globally, enhancing the value chains of leading brands across 30+ countries. Leveraging vast expertise, we optimize Technical Textiles' utilization and scientific principles.</p>
                 </div>
-                <div className="col-12 col-md-5 py-3 py-md-1 col-lg-5 d-flex flex-column align-items-center align-items-md-start">
-                    <div className='col-11 d-flex justify-content-center align-items-center'>
+                <div className="col-12 col-md-5 py-3 py-md-1 m-0 col-lg-5 d-flex flex-column align-items-center align-items-md-start">
+                    <div className='col-11 d-flex mx-auto justify-content-center align-items-center'>
                         <img src={aboutImg1} alt="About Image" className='img-fluid' />
                     </div>
-                    <div className='col-12 d-flex gap-2 flex-wrap justify-content-center justify-content-md-start py-md-5 py-3'>
+                    <div className='col-12 d-flex flex-wrap justify-content-evenly justify-content-md-evenly px-0'>
                         {
                             aboutCount.map((e, i) => {
                                 return (
-                                    <div key={i} className='col-5 p-3 count-box-shadow rounded-3'>
-                                        <h2 className="lead fs-3 fw-bolder">{e.num}+</h2>
+                                    <div key={i} className='col-5 p-3 mt-3 count-box-shadow rounded-3'>
+                                        <h2 className="lead fs-1 fw-bolder">{e.num}+</h2>
                                         <p className="lead fs-6 fw-medium">{e.text} </p>
                                     </div>
                                 )
@@ -126,32 +125,13 @@ function Home() {
             </div>
             <div className='row p-0 col-12 py-2 my-3 d-flex gap-2 justify-content-center align-items-center'>
                 <h2 className="mb-2 lead display-6 title-primary-2 text-center fw-bold">Get in Touch With Us</h2>
-                <div className="row col-12 d-flex flex-wrap gap-2 gap-md-0 justify-content-evenly align-items-">
+                <div className="row col-12 d-flex flex-wrap justify-content-evenly gap-2 gap-md-3">
                     <ContactCard icon={icon1} title="Office Hours" para="Mon - Sat: 9:30 AM to 6:30PM" />
-                    <ContactCard icon={icon3} title="Write Us On" para="harinilatextiles@gmail.com" />
-                </div>
-                <div className='row col-12 d-flex flex-wrap gap-2 gap-md-0 justify-content-evenly'>
-                    <ContactCard icon={icon2} title="Reach Us At" para="#12, 1st St Jayabharathi Nagar," para1="Porur, Chennai - 600116, India" class="col-sm-8" />
+                    <ContactCard icon={icon3} title="Write Us On" para="harinilatextiles@gmail.com"/>
+                    <ContactCard icon={icon2} title="Reach Us At" para="#12, 1st St Jayabharathi Nagar," para1="Porur, Chennai - 600116, India" class="col-12 col-sm-10"/>
                 </div>
             </div>
-            <div className='col-12 mx-auto d-flex justify-content-center justify-content-lg- align-items-center p-2'>
-                <div className="col-12 col-sm-10 col-md-5 p-3 row d-flex justify-content-center gap-3">
-                    <h2 className="lead fs-2 fw-bold title-primary-5 d-flex">
-                        Let's Connect
-                        <img src={chainIcon} alt="Chain Icon" height={40} />
-                    </h2>
-                    <input type="text" className='h-fit col-5 p-1 px-2 rounded-2' placeholder='First Name' />
-                    <input type="text" className='h-fit col-5 p-1 px-2 rounded-2' placeholder='Last Name' />
-                    <input type="text" className='h-fit col-5 p-1 px-2 rounded-2' placeholder='Phone No.' />
-                    <input type="text" className='h-fit col-5 p-1 px-2 rounded-2' placeholder='Location' />
-                    <input type="text" className='h-fit col-10 p-1 px-2 rounded-2' placeholder='E-Mail' />
-                    <textarea className='col-10 p-1 px-2 rounded-2' placeholder='Your Queries'></textarea>
-                    <span className='bg-green col-12 w-75 text-center'>Let's Connect</span>
-                </div>
-                <div className="col-4 col-sm-5 col-lg-4 row p-lg-3 d-none d-md-flex">
-                    <img src={formImg} alt="Form Image" className='img-fluid' />
-                </div>
-            </div>
+            
         </div>
     )
 }
@@ -160,16 +140,15 @@ export default Home
 
 
 
-const ContactCard = (props) => {
+export const ContactCard = (props) => {
     return (
-        <div className={`col-12 col-sm-5 d-flex gap-2 p-1 justify-content-center align-items-center ${props.class}`}>
+        <div className={`col-5 col-sm-5 d-flex flex-column flex-md-row gap-2 p-1 justify-content-center align-items-center ${props.class}`}>
             <div>
                 <img src={props.icon} alt="Clock Icon" width={80} />
             </div>
-            <div className='d-flex flex-column p-0'>
-                <h2 className="lead fs-4 fw-bolder title-primary-4 w-fit">{props.title}</h2>
-                <p className="lead fs-6 fw-medium">{props.para} </p>
-                <p className="lead fs-6 fw-medium">{props.para1} </p>
+            <div className='d-flex flex-column p-0 align-items-center align-items-md-start'>
+                <h2 className="lead fs-4 fw-bolder title-primary-4 w-fit text-center">{props.title}</h2>
+                <p className="lead fs-6 fw-medium w-fit text-center d-none d-sm-flex">{props.para} {props.para1} </p>
             </div>
         </div>
     )
