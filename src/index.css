@@ -14,6 +14,9 @@ li{
 .h-fit{
     height: fit-content;
 }
+.h-100vh{
+    height: 100vh;
+}
 
 b{
     font-weight: bold;

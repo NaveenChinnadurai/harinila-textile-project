@@ -1,8 +1,14 @@
 /* Navbar Stylings */
-
+.navbar-mobile{
+    background-color: #ebfff5;
+}
+.cross-btn{
+    top: 20px;
+    right: 20px;
+}
 .text-green {
     color: #61AF84;
-    font-weight: 500 !important;
+    font-weight: 500;
     transition: all;
     transition-duration: .6s;
 }
@@ -10,7 +16,6 @@
 .text-green:hover {
     color: #ED4947;
 }
-
 .text-orange {
     color: #ED4947;
 }
@@ -33,7 +38,7 @@
 }
 
 .footer-bg{
-    background-color: #C4C4C4;
+    background-color: #ebfff5;
     line-height: 30px;
 }
 
@@ -53,4 +58,41 @@ input,textarea{
 }
 textarea{
     height: 100px;
+}
+
+/* product banner */
+.product-banner-text {
+    top: 40%;
+}
+@media screen and (max-width:576px) {
+    .product-banner-text {
+        position: relative !important;
+        color: #2A4965 !important;
+        padding-top: 20px;
+        top: 0;
+    }
+}
+/* product page */
+.product-decor{
+    height: 300px;
+    background-color: #399B65;
+}
+.product-decor-top{
+    top: 70px;
+    border-top-right-radius:40% ;
+    border-bottom-right-radius:40% ;
+}
+.product-decor-bottom{
+    border-top-left-radius:40% ;
+    border-bottom-left-radius:40% ;
+    bottom:50px
+}
+
+/* features styles */
+.feature-card:hover .feature-info{
+    cursor: pointer;
+    transition: all 2s ease-in 0;
+    opacity: 1 !important;
+    border: dotted 1px rgb(226, 226, 226);
+    box-shadow: 0 0 30px 15px whitesmoke;
 }

@@ -11,6 +11,7 @@ import icon1 from '../assets/Icons/icon1.png'
 import icon2 from '../assets/Icons/icon2.png'
 import icon3 from '../assets/Icons/icon3.png'
 import chainIcon from '../assets/Icons/chainIcon.png'
+import Header from '../components/header';
 const productInfo = [
     {
         img: wovenFabric,
@@ -50,7 +51,7 @@ function Home() {
     return (
         <div className='m-0 row d-flex flex-column'>
             <div className="row col-md-10 mx-auto d-flex flex-column">
-                <h2 className="lead title-primary-6 display-1 fw-bold text-center opacity-50 mt-3"> Harinila Textiles</h2>
+                <Header textSize="display-1" text="Harnila Textiles"/>
                 <img src={bannerImg} alt="Banner Image" className=' img-fluid' />
                 <h1 className="col-md-10 col-12 lead display-6 fw-bold text-center mx-auto mt-4 title-primary-1">Welcome to Our Woven Fabric mills Where Quality Meets Styles</h1>
                 <p className="lead fs-5 title-primary-3 fw-medium text-center m-0">Harinila Weaves the Global with innovation</p>
