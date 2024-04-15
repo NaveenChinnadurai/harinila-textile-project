@@ -61,17 +61,6 @@
     box-shadow: -5px 5px 10px 0px rgb(221, 221, 221);
 }
 
-/* Input Form */
-
-input,textarea{
-    outline: none;
-    border:solid 1px rgb(107, 107, 107);
-    background-color: #EFEFEF;
-}
-textarea{
-    height: 100px;
-}
-
 /* product banner */
 .product-banner-text {
     top: 40%;
@@ -111,7 +100,18 @@ textarea{
 
 /* contact page */
 .contact-bg{
-    background: url("./assets/world.jpg") center;
+    background: url("./assets/stockImg/world.jpg") center;
     background-size: cover;
-    height: 100vh;
+    height: fit-content;
+}
+input,textarea{
+    border: 1px solid rgb(141, 141, 141) !important;
+    background: hwb(0 93% 7% / 0.5) !important;
+}
+textarea{
+    height: 200px !important;
+}
+.contact-banner{
+    background:url('./assets/bannerImg/ContactBanner.png') center no-repeat;
+    background-size: cover;
 }

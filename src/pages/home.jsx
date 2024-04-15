@@ -3,7 +3,6 @@ import { IoIosArrowForward as Arrow } from "react-icons/io";
 import bannerImg from '../assets/bannerImg/banner_1.png'
 import aboutImg from '../assets/aboutImg.png'
 import aboutImg1 from '../assets/aboutImg1.png'
-
 import wovenFabric from '../assets/productImages/wovenFabric.png'
 import cottonYarn from '../assets/productImages/cottonYarn.png'
 import knittedFabric from '../assets/productImages/knittedFabric.png'
