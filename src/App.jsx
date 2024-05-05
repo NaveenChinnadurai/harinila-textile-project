@@ -3,10 +3,12 @@ import './App.css'
 import Navbar from './components/navbar';
 import Home from './pages/home';
 import Footer from './components/footer';
-import ProductPage from './pages/productPage';
+import ProductPage from './pages/productPages/cottonYarn';
 import { Link, Route, Routes } from 'react-router-dom';
 import Contact from './pages/contact';
 import WA from './assets/Icons/whatsapp.png'
+import CottonYarn from './pages/productPages/cottonYarn';
+import KnittedFabric from './pages/productPages/knittedFabric';
 function App() {
 
   return (
@@ -17,7 +19,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/productPage' element={<ProductPage/>}/>
+        <Route path='/cottonyarn' element={<CottonYarn/>}/>
+        <Route path='/knittedfabric' element={<KnittedFabric/>}/>
         <Route path='/contactUs' element={<Contact/>}/>
       </Routes>
       <Footer />

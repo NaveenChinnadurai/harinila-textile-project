@@ -54,6 +54,16 @@
     line-height: 30px;
 }
 
+
+/* dropdown */
+
+.product-dropdown{
+}
+.product-dropdown>ul{
+    top: 50px;
+    width: 200px;
+    z-index: 1;
+}
 /* about Count Stylings */
 
 .count-box-shadow {
@@ -75,20 +85,40 @@
 }
 /* product page */
 .product-decor{
-    height: 300px;
+    height: 500px;
+    width: 40vw;
     background-color: #399B65;
 }
 .product-decor-top{
-    top: 70px;
     border-top-right-radius:40% ;
     border-bottom-right-radius:40% ;
 }
 .product-decor-bottom{
     border-top-left-radius:40% ;
     border-bottom-left-radius:40% ;
-    bottom:50px
+    bottom: 0;
 }
 
+
+/* Knitted fabric page */
+.knitted-fabric>.product-decor{
+    width: 50vw;
+    min-height: 300px;
+}
+.knitted-fabric>.product-decor-top{
+    background: url('./assets/productImages/knittedFabrics/img1.png') center no-repeat;
+    background-size: cover;
+    border-top-right-radius:50% ;
+    border-bottom-right-radius:50% ;
+    filter: opacity(0.6);
+}
+.knitted-fabric>.product-decor-bottom{
+    background: url('./assets/productImages/knittedFabrics/img2.png') center;
+    background-size: cover;
+    border-top-left-radius:50% ;
+    border-bottom-left-radius:50% ;
+    filter: opacity(0.6);
+}
 /* features styles */
 .feature-card:hover .feature-info{
     cursor: pointer;

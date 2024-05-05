@@ -111,7 +111,7 @@ function Contact() {
         {
           products.map((e, i) => {
             return (
-              <div className="col-10 col-sm-5 col-md-3 d-flex flex-column justify-content-center align-items-center gap-3 border border-1 p-2">
+              <div key={i} className="col-10 col-sm-5 col-md-3 d-flex flex-column justify-content-center align-items-center gap-3 border border-1 p-2">
                 <img src={e.img} alt={e.title} className='img-fluid' />
                 <h2 className="lead fs-3 fw-medium text-center pb-3">{e.title}</h2>
               </div>

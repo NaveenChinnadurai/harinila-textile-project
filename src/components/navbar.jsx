@@ -1,19 +1,28 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import iconImg from '../../public/Main_Logo.png'
 import { GiHamburgerMenu as BurgerMenu } from "react-icons/gi";
-import { IoIosArrowDown as Arrow } from "react-icons/io";
+import { IoIosArrowDown as ArrowDown, IoIosArrowUp as ArrowTop } from "react-icons/io";
 import { Link } from 'react-router-dom';
-import { RxCross2 as Cross} from "react-icons/rx";
+import { RxCross2 as Cross } from "react-icons/rx";
 
 function Navbar() {
-  const desktop="col-lg-7 m-0 gap-md-4 gap-lg-5 d-none d-md-flex align-items-center justify-content-end justify-content-lg-center"
-  const mobile="navbar-mobile position-absolute w-75 fs-2 end-0 top-0 h-100vh z-3 d-flex align-items-center justify-content-center flex-column gap-3"
+  const desktop = "col-lg-7 m-0 gap-md-4 gap-lg-5 d-none d-md-flex align-items-center justify-content-end justify-content-lg-center"
+  const mobile = "navbar-mobile position-absolute w-75 fs-2 end-0 top-0 h-100vh z-3 d-flex align-items-center justify-content-center flex-column gap-3"
   const [navbar, setNavbar] = useState(desktop)
-  const handleBurgerClick=()=>{
+  const [dropdown, setDropdown] = useState(false)
+  const handleBurgerClick = () => {
+    document.body.style.height = "100vh"
+    document.body.style.overflow = "hidden"
     setNavbar(mobile)
   }
-  const handleCrossClick=()=>{
+  const handleCrossClick = () => {
+    document.body.style.height = "fit-contain"
+    document.body.style.overflow = "auto"
     setNavbar(desktop)
+    setDropdown(!dropdown)
+  }
+  const handleProductClick = () => {
+    setDropdown(!dropdown);
   }
   return (
     <div className='box-shadow row col-10 py-md-4 py-1 mx-auto px-md-4 px-2 d-flex justify-content-between align-items-center rounded-4'>
@@ -21,10 +30,35 @@ function Navbar() {
         <img src={iconImg} alt="Icon Images" height={60} width={60} />
       </Link>
       <ul className={navbar}>
-        <p className='lead text-center fw-bold d-md-none'>Feel free to contact Us</p>
-        <li className='position-absolute cross-btn d-md-none' onClick={handleCrossClick}><Cross/></li>
+{/*         <p className='lead text-center fw-bold d-md-none'>Feel free to contact Us</p> */}
+        <li className='position-absolute cross-btn d-md-none' onClick={handleCrossClick}><Cross /></li>
         <li><Link to="/" className='fs-5 lead fw-normal text-green text-decoration-none' onClick={handleCrossClick}>Home</Link></li>
-        <li><Link to="/productPage" className='fs-5 w-fit lead fw-normal text-green d-flex gap-1 align-items-center justify-content-center text-decoration-none' onClick={handleCrossClick}>Product <Arrow /></Link></li>
+        <li
+          onClick={handleProductClick}
+          className='position-relative product-dropdown fs-5 w-fit lead fw-normal text-green d-flex gap-1 align-items-center justify-content-center text-decoration-none'
+        >
+          Product
+          {
+            dropdown ?
+              <>
+                <ArrowTop/>
+                <ul className="position-absolute w-fit bg-white p-4 rounded-3 start-0 d-md-flex flex-column gap-3 d-none">
+                  <li><Link className="text-decoration-none fs-5 lead fw-normal text-green " to="/cottonyarn" onClick={handleCrossClick}>Cotton Yarn</Link></li>
+                  <li><Link className="text-decoration-none fs-5 lead fw-normal text-green " to="/knittedfabric" onClick={handleCrossClick}>Knitted Fabric</Link></li>
+                  <li><Link className="text-decoration-none fs-5 lead fw-normal text-green " onClick={handleCrossClick}>Woven Fabric</Link></li>
+                </ul></>
+              : <ArrowDown/>
+          }
+        </li>
+        {
+          screen.width < 700 && dropdown ?
+            <>
+              <li><Link className="text-decoration-none fs-5 lead fw-normal text-green d-md-none" to="/cottonyarn" onClick={handleCrossClick}>Cotton Yarn</Link></li>
+              <li><Link className="text-decoration-none fs-5 lead fw-normal text-green d-md-none" to="/knittedfabric" onClick={handleCrossClick}>Knitted Fabric</Link></li>
+              <li><Link className="text-decoration-none fs-5 lead fw-normal text-green d-md-none" onClick={handleCrossClick}>Woven Fabric</Link></li>
+            </>
+            : <></>
+        }
         <li><Link className='fs-5 lead fw-normal text-green text-decoration-none' onClick={handleCrossClick}>Updates</Link></li>
         <li><Link className='fs-5 lead fw-normal text-green text-decoration-none' onClick={handleCrossClick}>About</Link></li>
         <li><Link to="/contactUs" className='fs-5 lead fw-normal text-green text-decoration-none' onClick={handleCrossClick}>Contact</Link></li>

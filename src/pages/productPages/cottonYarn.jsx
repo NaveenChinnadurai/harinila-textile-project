@@ -1,14 +1,13 @@
 import React from 'react'
-import Header from '../components/header'
-import bannerImg from '../assets/bannerImg/cottonBanner.png'
-import cottonImg from '../assets/productImages/Cotton/cottonImage.png'
-import { LuArrowRight as RightArrow} from "react-icons/lu";
-import img1 from "../assets/stockImg/img1.png"
-import img2 from "../assets/stockImg/img2.png"
-import img3 from "../assets/stockImg/img3.png"
-import img4 from "../assets/stockImg/img4.png"
-import img5 from "../assets/stockImg/img5.png"
-import img6 from "../assets/stockImg/img6.png"
+import Header from '../../components/header'
+import bannerImg from '../../assets/bannerImg/cottonBanner.png'
+import cottonImg from '../../assets/productImages/Cotton/cottonImage.png'
+import img1 from "../../assets/stockImg/img1.png"
+import img2 from "../../assets/stockImg/img2.png"
+import img3 from "../../assets/stockImg/img3.png"
+import img4 from "../../assets/stockImg/img4.png"
+import img5 from "../../assets/stockImg/img5.png"
+import img6 from "../../assets/stockImg/img6.png"
 const features = [
     {
         title: "High-Quality Cotton Yarn",
@@ -41,7 +40,7 @@ const features = [
         text: "We have a strong presence in the international market, with a network of satisfied customers across different continents. Our export expertise allows us to efficiently handle documentation, shipping, and customs procedures."
     }
 ]
-function ProductPage() {
+function CottonYarn() {
     return (
         <div className='row col-12 mx-auto'>
             <div className='row col-md-10 mx-auto d-flex flex-column'>
@@ -56,16 +55,16 @@ function ProductPage() {
                 </div>
                 <p className="lead col-md-10 text-center m-auto fw-normal my-4 fs-5">We are a leading supplier of <span className='fw-bold'>premium quality cotton yarn </span>for the global market. With our commitment to excellence and customer satisfaction, we have established ourselves as a trusted partner in the textile industry. Whether you are a garment manufacturer, a wholesaler, or a textile company, <span className='fw-bold'>we have the right cotton yarn to meet your needs.</span></p>
             </div>
-            <div className="row col-12 p-0 py-3 position-relative">
-                <div className="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto z-2">
+            <div className="row col-12 p-0 py-3 my-5 position-relative">
+                <div className="col-12 col-sm-10 col-md-8 col-lg-8 mx-auto z-2">
                     <img src={cottonImg} alt="cotton image" className='img-fluid' />
                 </div>
-                <div className="product-decor d-none d-md-flex product-decor-top col-5 position-absolute"></div>
-                <div className="product-decor d-none d-md-flex product-decor-bottom col-5 position-absolute end-0 "></div>
+                <div className="product-decor d-none d-md-flex product-decor-top position-absolute"></div>
+                <div className="product-decor d-none d-md-flex product-decor-bottom position-absolute end-0 "></div>
             </div>
             <p className="lead fs-4 fw-normal text-center col-md-8 mx-auto">Our extensive range of cotton yarns is meticulously crafted to meet the highest industry standards, ensuring superior quality and performance in every strand. <b>From fine counts for delicate fabrics to robust options for durable textiles,</b>we offer versatile solutions tailored to your specific requirements. Partner with us and experience the difference that premium <b>quality cotton yarn can make in your products.</b></p>
             <div className='col-md-11 mx-auto d-flex flex-column gap-md-5 gap-3 p-3'>
-                <h2 className="display-5 text-green fw-bold">Benefits of Choosing us <RightArrow/> </h2>
+                <h2 className="display-5 text-green fw-bold">Benefits of Choosing us </h2>
                 <div className='p-md-3 d-flex flex-column gap-5'>
                     {
                         features.map((e, i) => {
@@ -90,4 +89,4 @@ function ProductPage() {
     )
 }
 
-export default ProductPage
+export default CottonYarn
