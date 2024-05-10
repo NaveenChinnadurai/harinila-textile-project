@@ -54,11 +54,20 @@
     line-height: 30px;
 }
 
+/* Product page stylings */
+
+.features-card{
+    box-shadow: 20px 10px 30px 1px rgb(212, 212, 212);
+}
+
+@media screen and (max-width:600px) {
+    .features-card{
+        box-shadow: 10px 10px 20px 1px rgb(124, 124, 124);
+    }
+}
 
 /* dropdown */
 
-.product-dropdown{
-}
 .product-dropdown>ul{
     top: 50px;
     width: 200px;
@@ -82,50 +91,6 @@
         padding-top: 20px;
         top: 0;
     }
-}
-/* product page */
-.product-decor{
-    height: 500px;
-    width: 40vw;
-    background-color: #399B65;
-}
-.product-decor-top{
-    border-top-right-radius:40% ;
-    border-bottom-right-radius:40% ;
-}
-.product-decor-bottom{
-    border-top-left-radius:40% ;
-    border-bottom-left-radius:40% ;
-    bottom: 0;
-}
-
-
-/* Knitted fabric page */
-.knitted-fabric>.product-decor{
-    width: 50vw;
-    min-height: 300px;
-}
-.knitted-fabric>.product-decor-top{
-    background: url('./assets/productImages/knittedFabrics/img1.png') center no-repeat;
-    background-size: cover;
-    border-top-right-radius:50% ;
-    border-bottom-right-radius:50% ;
-    filter: opacity(0.6);
-}
-.knitted-fabric>.product-decor-bottom{
-    background: url('./assets/productImages/knittedFabrics/img2.png') center;
-    background-size: cover;
-    border-top-left-radius:50% ;
-    border-bottom-left-radius:50% ;
-    filter: opacity(0.6);
-}
-/* features styles */
-.feature-card:hover .feature-info{
-    cursor: pointer;
-    transition: all 2s ease-in 0;
-    opacity: 1 !important;
-    border: dotted 1px rgb(226, 226, 226);
-    box-shadow: 0 0 30px 15px whitesmoke;
 }
 
 /* contact page */

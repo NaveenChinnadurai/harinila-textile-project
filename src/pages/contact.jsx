@@ -1,6 +1,5 @@
 import React from 'react'
 import chainIcon from '../assets/Icons/chainIcon.png'
-import { ContactCard } from './home'
 import icon1 from '../assets/Icons/icon1.png'
 import icon2 from '../assets/Icons/icon2.png'
 import icon3 from '../assets/Icons/icon3.png'
@@ -11,6 +10,8 @@ import { Link } from 'react-router-dom'
 import formImg from '../assets/stockImg/contactBg.png'
 import product2 from '../assets/productImages/knittedFabrics/knittedFabric.jpg'
 import product3 from '../assets/productImages/wovenFabrics/wovenFabric.jpg'
+import ContactCard from '../components/contactCard'
+import ContactSection from '../components/contactCard'
 const logo = [
   {
     icon: <FB />,
@@ -52,11 +53,7 @@ function Contact() {
       </div>
       <div className='row p-0 col-12 py-2 my-3 d-flex gap-2 justify-content-center align-items-center'>
         <h2 className="mb-2 lead display-6 title-primary-2 text-center fw-bold">Get in Touch With Us</h2>
-        <div className="row col-12 d-flex flex-wrap justify-content-evenly gap-2 gap-md-3">
-          <ContactCard icon={icon1} title="Office Hours" para="Mon - Sat: 9:30 AM to 6:30PM" />
-          <ContactCard icon={icon3} title="Write Us On" para="harinilatextiles@gmail.com" />
-          <ContactCard icon={icon2} title="Reach Us At" para="#12, 1st St Jayabharathi Nagar," para1="Porur, Chennai - 600116, India" className="col-12 col-sm-10" />
-        </div>
+        <ContactSection/>
       </div>
       <div className='col-12 m-0 mx-auto d-flex flex-column flex-md-row justify-content-evenly justify-content-sm-start align-items-center p-2 contact-bg px-md-5 my-3'>
         <div className="col-12 col-sm-8 col-md-6 py-3 px-1 px-md-0 row d-flex justify-content-center gap-2">

@@ -19,7 +19,6 @@ function Navbar() {
     document.body.style.height = "fit-contain"
     document.body.style.overflow = "auto"
     setNavbar(desktop)
-    setDropdown(!dropdown)
   }
   const handleProductClick = () => {
     setDropdown(!dropdown);
@@ -45,7 +44,7 @@ function Navbar() {
                 <ul className="position-absolute w-fit bg-white p-4 rounded-3 start-0 d-md-flex flex-column gap-3 d-none">
                   <li><Link className="text-decoration-none fs-5 lead fw-normal text-green " to="/cottonyarn" onClick={handleCrossClick}>Cotton Yarn</Link></li>
                   <li><Link className="text-decoration-none fs-5 lead fw-normal text-green " to="/knittedfabric" onClick={handleCrossClick}>Knitted Fabric</Link></li>
-                  <li><Link className="text-decoration-none fs-5 lead fw-normal text-green " onClick={handleCrossClick}>Woven Fabric</Link></li>
+                  <li><Link className="text-decoration-none fs-5 lead fw-normal text-green " to="/wovenfabric" onClick={handleCrossClick}>Woven Fabric</Link></li>
                 </ul></>
               : <ArrowDown/>
           }
@@ -55,7 +54,7 @@ function Navbar() {
             <>
               <li><Link className="text-decoration-none fs-5 lead fw-normal text-green d-md-none" to="/cottonyarn" onClick={handleCrossClick}>Cotton Yarn</Link></li>
               <li><Link className="text-decoration-none fs-5 lead fw-normal text-green d-md-none" to="/knittedfabric" onClick={handleCrossClick}>Knitted Fabric</Link></li>
-              <li><Link className="text-decoration-none fs-5 lead fw-normal text-green d-md-none" onClick={handleCrossClick}>Woven Fabric</Link></li>
+              <li><Link className="text-decoration-none fs-5 lead fw-normal text-green d-md-none" to="/wovenfabric" onClick={handleCrossClick}>Woven Fabric</Link></li>
             </>
             : <></>
         }
