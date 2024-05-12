@@ -6,8 +6,9 @@ import { Link } from 'react-router-dom';
 import { RxCross2 as Cross } from "react-icons/rx";
 
 function Navbar() {
+  const screen=window.innerWidth;
   const desktop = "col-lg-7 m-0 gap-md-4 gap-lg-5 d-none d-md-flex align-items-center justify-content-end justify-content-lg-center"
-  const mobile = "navbar-mobile position-absolute w-75 fs-2 end-0 top-0 h-100vh z-3 d-flex align-items-center justify-content-center flex-column gap-3"
+  const mobile = "nav-bg position-absolute w-75 fs-2 end-0 top-0 h-100vh z-3 d-flex align-items-center justify-content-center flex-column gap-3"
   const [navbar, setNavbar] = useState(desktop)
   const [dropdown, setDropdown] = useState(false)
   const handleBurgerClick = () => {
@@ -29,7 +30,6 @@ function Navbar() {
         <img src={iconImg} alt="Icon Images" height={60} width={60} />
       </Link>
       <ul className={navbar}>
-{/*         <p className='lead text-center fw-bold d-md-none'>Feel free to contact Us</p> */}
         <li className='position-absolute cross-btn d-md-none' onClick={handleCrossClick}><Cross /></li>
         <li><Link to="/" className='fs-5 lead fw-normal text-green text-decoration-none' onClick={handleCrossClick}>Home</Link></li>
         <li
@@ -41,23 +41,14 @@ function Navbar() {
             dropdown ?
               <>
                 <ArrowTop/>
-                <ul className="position-absolute w-fit bg-white p-4 rounded-3 start-0 d-md-flex flex-column gap-3 d-none">
-                  <li><Link className="text-decoration-none fs-5 lead fw-normal text-green " to="/cottonyarn" onClick={handleCrossClick}>Cotton Yarn</Link></li>
+                <ul className={`position-absolute px-4 py-3 pb-2 p-md-4 rounded-3 d-flex flex-column gap-3 ms-5 ms-5 ${screen<=768? "nav-bg":"bg-white"}`}>
+                  <li><Link className="text-decoration-none fs-5 lead fw-normal text-green" to="/cottonyarn" onClick={handleCrossClick}>Cotton Yarn</Link></li>
                   <li><Link className="text-decoration-none fs-5 lead fw-normal text-green " to="/knittedfabric" onClick={handleCrossClick}>Knitted Fabric</Link></li>
                   <li><Link className="text-decoration-none fs-5 lead fw-normal text-green " to="/wovenfabric" onClick={handleCrossClick}>Woven Fabric</Link></li>
                 </ul></>
               : <ArrowDown/>
           }
         </li>
-        {
-          screen.width < 700 && dropdown ?
-            <>
-              <li><Link className="text-decoration-none fs-5 lead fw-normal text-green d-md-none" to="/cottonyarn" onClick={handleCrossClick}>Cotton Yarn</Link></li>
-              <li><Link className="text-decoration-none fs-5 lead fw-normal text-green d-md-none" to="/knittedfabric" onClick={handleCrossClick}>Knitted Fabric</Link></li>
-              <li><Link className="text-decoration-none fs-5 lead fw-normal text-green d-md-none" to="/wovenfabric" onClick={handleCrossClick}>Woven Fabric</Link></li>
-            </>
-            : <></>
-        }
         <li><Link className='fs-5 lead fw-normal text-green text-decoration-none' onClick={handleCrossClick}>Updates</Link></li>
         <li><Link className='fs-5 lead fw-normal text-green text-decoration-none' onClick={handleCrossClick}>About</Link></li>
         <li><Link to="/contactUs" className='fs-5 lead fw-normal text-green text-decoration-none' onClick={handleCrossClick}>Contact</Link></li>

@@ -1,4 +1,4 @@
-import knittedFabric from '../../json/knittedFabric.json'
+import knittedFabric from '../../scripts/knittedFabricData'
 import ProductPage from '../productPage'
 function KnittedFabric() {
     return (

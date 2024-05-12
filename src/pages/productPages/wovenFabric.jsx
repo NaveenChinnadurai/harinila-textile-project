@@ -1,4 +1,4 @@
-import wovenfabrics from '../../json/wovenfabric.json'
+import wovenfabrics from '../../scripts/wovenFabricData'
 import ProductPage from '../productPage'
 function WovenFabrics() {
     return (

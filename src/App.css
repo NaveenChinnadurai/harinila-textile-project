@@ -11,7 +11,8 @@
     }
 }
 /* Navbar Stylings */
-.navbar-mobile{
+
+.nav-bg{
     background-color: #ebfff5;
 }
 .cross-btn{
@@ -107,6 +108,13 @@ textarea{
     height: 200px !important;
 }
 .contact-banner{
-    background:url('./assets/bannerImg/ContactBanner.png') center no-repeat;
+    background:url('./assets/stockImg/ContactBanner.png') center no-repeat;
     background-size: cover;
+}
+
+
+/* update section */
+
+.update-decor{
+    background-color: #DAE4EE;
 }

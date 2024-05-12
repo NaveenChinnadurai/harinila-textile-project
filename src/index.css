@@ -13,12 +13,14 @@ li{
     width: fit-content;
 }
 .h-fit{
-    height: fit-content;
+    height: fit-content !important;
 }
 .h-100vh{
     height: 100vh;
 }
-
+.h-full{
+    height: 100% !important;
+}
 b{
     font-weight: bold;
 }

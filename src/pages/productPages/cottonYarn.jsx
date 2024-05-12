@@ -1,4 +1,4 @@
-import cottonyarn from '../../json/cotton.json'
+import cottonyarn from '../../scripts/cottonYarnData'
 import ProductPage from '../productPage'
 function CottonYarn() {
     return (
