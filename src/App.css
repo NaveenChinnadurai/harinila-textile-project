@@ -114,7 +114,17 @@ textarea{
 
 
 /* update section */
-
+.posters-container::-webkit-scrollbar{
+    background-color: rebeccapurple;
+}
 .update-decor{
     background-color: #DAE4EE;
+}
+.update-decor-1{
+    right: 0 !important;
+    height: 100%;
+}
+
+.h-100{
+    height: 100%;
 }

@@ -49,18 +49,21 @@ export const posters = [
         imgPath: poster1,
         title: "DHAKA YARN & FABRIC SHOW'2022",
         date: "18",
-        month: "Aug , 2022"
+        month: "Aug",
+        year:"2022"
     },
     {
         imgPath: poster2,
         title: "PREVIEW IN DAEGU FAIR,KOREA",
         date: "06",
-        month: "March , 2023"
+        month: "March",
+        year:"2023"
     },
     {
         imgPath: poster3,
         title: "DHAKA INTERNATIONAL YARN & FABRIC SHOW' 2022",
         date: "07",
-        month: "Sep , 2023"
+        month: "Sep",
+        year:"2023"
     },
 ]

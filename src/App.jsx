@@ -10,6 +10,7 @@ import WA from './assets/Icons/whatsapp.png'
 import CottonYarn from './pages/productPages/cottonYarn';
 import KnittedFabric from './pages/productPages/knittedFabric';
 import WovenFabrics from './pages/productPages/wovenFabric';
+import Update from './pages/update';
 function App() {
 
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/knittedfabric' element={<KnittedFabric/>}/>
         <Route path='/wovenfabric' element={<WovenFabrics/>}/>
         <Route path='/contactUs' element={<Contact/>}/>
+        <Route path='/updates' element={<Update/>}/>
       </Routes>
       <Footer />
     </div>

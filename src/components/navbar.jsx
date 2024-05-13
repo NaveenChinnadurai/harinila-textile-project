@@ -49,7 +49,7 @@ function Navbar() {
               : <ArrowDown/>
           }
         </li>
-        <li><Link className='fs-5 lead fw-normal text-green text-decoration-none' onClick={handleCrossClick}>Updates</Link></li>
+        <li><Link to="/updates" className='fs-5 lead fw-normal text-green text-decoration-none' onClick={handleCrossClick}>Updates</Link></li>
         <li><Link className='fs-5 lead fw-normal text-green text-decoration-none' onClick={handleCrossClick}>About</Link></li>
         <li><Link to="/contactUs" className='fs-5 lead fw-normal text-green text-decoration-none' onClick={handleCrossClick}>Contact</Link></li>
       </ul>

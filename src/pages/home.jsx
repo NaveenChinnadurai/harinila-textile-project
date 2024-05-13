@@ -32,12 +32,12 @@ function Home() {
                 <div className='col-12 col-md-7 col-lg-6 d-flex flex-column gap-2'>
                     <h2 className="lead fs-3 fw-bold title-primary-2">WHAT WE DO</h2>
                     <h1 className="lead display-6 fw-bold title-primary-1 px-2 ms-3 ms-md-0 border-start border-5">Harinila Textiles, beyond exports we are working as multifunctional company</h1>
-                    <div className='d-block d-md-none col-10 col-sm-7 mx-auto p-5'>
+                    <div className='d-block d-md-none col-12 col-sm-7 mx-auto p-5'>
                         <img src={aboutImg} alt="About Image" className='img-fluid ' />
                     </div>
                     <p className='lead fs-5 fw-normal'>Active as a knowledge and innovation partner, creations and commercialization partner, marketing and sourcing partner for Textiles and Technical Textiles Value Chain. We are significantly contributing the value chain of the world’s leading brands, <b> textile conglomerates, retailers and manufacturers in more than 30 countries globally. </b>We want to make best use of our experience and knowledge of – Technical Textiles and science behind it.</p>
                 </div>
-                <div className="col-12 col-md-4 col-lg-4  d-flex justify-content-center align-items-center d-none d-md-block">
+                <div className="col-12 col-md-4 col-lg-4 d-flex justify-content-center align-items-center d-none d-md-block">
                     <img src={aboutImg} alt="About Image" className='img-fluid' />
                 </div>
             </div>
@@ -68,7 +68,7 @@ function Home() {
                     }
                 </div>
             </div>
-            <div className='my-4 p-0 row d-flex justify-content-between update-decor align-items-center'>
+            {/*             <div className='my-4 p-0 row d-flex justify-content-between update-decor align-items-center'>
                 <div className='col-1 col-sm-3 col-md-2 p-0 d-flex'>
                     <img src={updateDecor1} alt="update decors" className='img-fluid'/>
                 </div>
@@ -76,12 +76,13 @@ function Home() {
                 <div className='col-2 col-sm-4 col-md-3 p-0 d-flex align-items-end'>
                     <img src={updateDecor2} alt="update decors" className='img-fluid'/>
                 </div>
-            </div>
-            <div className="row col-12 my-3 p-2 gap-2 gap-md-4 d-flex justify-content-center flex-nowrap overflow-auto">
+            </div>*/}
+            <h2 className="lead text-center title-primary-7 mt-5 fw-bolder fs-1">UPDATES</h2>
+            <div className="row col-12 my-3 p-2 gap-2 gap-md-4 d-flex justify-content-lg-center flex-nowrap overflow-auto">
                 {
                     posters.map((e, i) => {
                         return (
-                            <div className="card col-10 col-sm-5 col-md-4 col-lg-3 py-2" key={i}>
+                            <div className="card col-11 col-sm-6 col-md-5 col-lg-3 py-2" key={i}>
                                 <img className="card-img-top" src={e.imgPath} alt={e.title} />
                                 <div className="card-body px-1">
                                     <div className="d-flex justify-content-between">
@@ -90,7 +91,7 @@ function Home() {
                                     </div>
                                     <div className="d-flex align-items-center gap-1">
                                         <p className="card-text fs-3 fw-bolder">{e.date}</p>
-                                        <p className="card-text fs-6 fw-medium">{e.month}</p>
+                                        <p className="card-text fs-6 fw-medium">{e.month} , {e.year}</p>
                                     </div>
                                 </div>
                             </div>
