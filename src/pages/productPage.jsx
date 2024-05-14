@@ -2,7 +2,6 @@ import React from 'react'
 import Header from '../components/header'
 import ContactSection from '../components/contactCard'
 function ProductPage(props) {
-
     const data=props.data
     return (
         <div className='row col-12 mx-auto'>

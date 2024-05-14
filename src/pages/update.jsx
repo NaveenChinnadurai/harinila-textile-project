@@ -20,7 +20,7 @@ function Update() {
                 {
                     posters.map((e, i) => {
                         return (
-                            <div className='row col-12 d-flex justify-content-evenly align-items-center align-items-sm-start' key={i}>
+                            <div className='row col-12 d-flex justify-content-evenly align-items-start' key={i}>
                                 <div className='col-9 col-sm-8 col-md-6 col-lg-5'>
                                     <img src={e.imgPath} alt={e.title} className='col-12 rounded-4' />
                                 </div>
