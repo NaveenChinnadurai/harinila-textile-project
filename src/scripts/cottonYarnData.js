@@ -14,7 +14,7 @@ import img6 from "../assets/productImages/cotton/stock/img6.png"
 const data = {
   headerTitle1: "Cotton Yarn",
   headerTitle2: "Harinila Textiles - Cotton Yarn Spinning",
-  bannerImg: mainBanner,
+  bannerImg: "../assets/productImages/cotton/cottonBanner.png",
   bannerText: "Welcome to Harinila Textiles! Sustainable Cotton Yarns & Fabrics",
   bannerSubText: "Innovation in your business starts here",
   bannerImages: [banner1,banner2,banner3],
