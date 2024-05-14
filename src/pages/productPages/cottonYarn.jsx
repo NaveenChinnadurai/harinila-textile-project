@@ -4,7 +4,7 @@ function CottonYarn() {
     return (
         <>
             <ProductPage
-                data={cottonyarn}
+                data={cottonyarn[0]}
             />
         </>
     )

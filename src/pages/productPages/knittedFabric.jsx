@@ -4,7 +4,7 @@ function KnittedFabric() {
     return (
         <>
             <ProductPage
-                data={knittedFabric}
+                data={knittedFabric[0]}
             />
         </>
     )
