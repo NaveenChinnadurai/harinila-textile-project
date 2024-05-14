@@ -10,6 +10,7 @@ import img3 from "../assets/productImages/cotton/stock/img3.png"
 import img4 from "../assets/productImages/cotton/stock/img4.png"
 import img5 from "../assets/productImages/cotton/stock/img5.png"
 import img6 from "../assets/productImages/cotton/stock/img6.png"
+
 const data = {
   headerTitle1: "Cotton Yarn",
   headerTitle2: "Harinila Textiles - Cotton Yarn Spinning",
