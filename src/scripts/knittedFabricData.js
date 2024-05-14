@@ -1,5 +1,5 @@
-import mainBanner from "../assets/productImages/knittedFabrics/knittedFabric.png"
 
+import mainBanner from "../assets/productImages/knittedFabrics/knittedFabric.png"
 import banner1 from "../assets/productImages/knittedFabrics/img1.png"
 import banner2 from "../assets/productImages/knittedFabrics/img2.png"
 import banner3 from "../assets/productImages/knittedFabrics/img3.png"
