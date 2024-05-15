@@ -1,5 +1,6 @@
 
 import mainBanner from "../assets/productImages/cotton/cottonBanner.png"
+
 import banner1 from "../assets/productImages/cotton/img1.png"
 import banner2 from "../assets/productImages/cotton/img2.png"
 import banner3 from "../assets/productImages/cotton/img3.png"

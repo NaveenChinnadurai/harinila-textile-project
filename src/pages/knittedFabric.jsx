@@ -1,5 +1,5 @@
-import {knittedFabricData} from '../../scripts/knittedFabricData'
-import ProductPage from '../productPage'
+import {knittedFabricData} from '../scripts/knittedFabricData'
+import ProductPage from './productPage'
 function KnittedFabric() {
     return (
         <>

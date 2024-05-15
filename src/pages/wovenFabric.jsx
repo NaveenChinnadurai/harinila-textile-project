@@ -1,5 +1,5 @@
-import {wovenFabricData} from '../../scripts/wovenFabricData'
-import ProductPage from '../productPage'
+import {wovenFabricData} from '../scripts/wovenFabricData'
+import ProductPage from './productPage'
 function WovenFabrics() {
     console.log(wovenfabrics)
     return (

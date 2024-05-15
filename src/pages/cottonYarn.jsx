@@ -1,5 +1,5 @@
-import {cottonData} from '../../scripts/cottonYarnData'
-import ProductPage from '../productPage'
+import {cottonData} from '../scripts/cottonYarnData'
+import ProductPage from './productPage'
 function CottonYarn() {
     return (
         <>
