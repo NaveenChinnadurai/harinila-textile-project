@@ -1,9 +1,9 @@
-import 'bootstrap/dist/css/bootstrap.min.css';   //Imported bootstrap CSS file
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './App.css'
 import Navbar from './components/navbar';
 import Home from './pages/home';
 import Footer from './components/footer';
-import ProductPage from './pages/productPages/cottonYarn';
 import { Link, Route, Routes } from 'react-router-dom';
 import Contact from './pages/contact';
 import WA from './assets/Icons/whatsapp.png'
