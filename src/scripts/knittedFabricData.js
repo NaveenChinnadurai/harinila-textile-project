@@ -11,7 +11,7 @@ import img4 from "../assets/productImages/knittedFabrics/stock/img4.png"
 import img5 from "../assets/productImages/knittedFabrics/stock/img5.png"
 import img6 from "../assets/productImages/knittedFabrics/stock/img6.png"
 
-const data = [
+export const knittedFabricData = [
     {
         headerTitle1: " Knitted Fabric ",
         headerTitle2: "Harinila Textiles - Knitted fabric Spinning",
@@ -57,5 +57,3 @@ const data = [
         contactText: "Get in touch with us today to explore your knitted fabric needs or to request samples. We're excited about the opportunity to collaborate with you and provide top-tier quality yarn perfectly suited for your knitting projects."
     }
 ]
-
-export default data;

@@ -1,10 +1,11 @@
-import wovenfabrics from '../../scripts/wovenFabricData'
+import {wovenFabricData} from '../../scripts/wovenFabricData'
 import ProductPage from '../productPage'
 function WovenFabrics() {
+    console.log(wovenfabrics)
     return (
         <>
             <ProductPage
-                data={wovenfabrics[0]}
+                data={wovenFabricData[0]}
             />
         </>
     )

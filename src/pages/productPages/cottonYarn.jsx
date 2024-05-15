@@ -1,10 +1,10 @@
-import cottonyarn from '../../scripts/cottonYarnData'
+import {cottonData} from '../../scripts/cottonYarnData'
 import ProductPage from '../productPage'
 function CottonYarn() {
     return (
         <>
             <ProductPage
-                data={cottonyarn[0]}
+                data={cottonData[0]}
             />
         </>
     )

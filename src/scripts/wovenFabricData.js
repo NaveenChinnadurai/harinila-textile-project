@@ -10,13 +10,14 @@ import img3 from "../assets/productImages/knittedFabrics/stock/img3.png"
 import img4 from "../assets/productImages/knittedFabrics/stock/img4.png"
 import img5 from "../assets/productImages/knittedFabrics/stock/img5.png"
 import img6 from "../assets/productImages/knittedFabrics/stock/img6.png"
-const data = [
+
+export const wovenFabricData =[
   {
     headerTitle1: "Woven Fabrics",
     headerTitle2: "Harinila Textiles - Woven Fabric Crafting",
     bannerImg: mainBanner,
     bannerText: "Elevate Your Creations Discover Exquisite Woven Fabrics, Unmatched Quality & Sustainability",
-    bannerImages: [banner1, banner2, banner3],
+    bannerImages: [banner1,banner2,banner3],
     bannerSubText: "Future of Textiles industry begin Here",
     para1: "Discover superior woven fabrics at Harinila Textiles, your ultimate source for premium textile solutions. With our unwavering dedication to quality and customer-centric approach, we strive to be your trusted ally in the textile realm. Whether you're a garment manufacturer, wholesaler, or textile company, effortlessly find the ideal woven fabrics to elevate your projects.",
     para2: "Experience the pinnacle of innovation and excellence in woven fabric production at Harinila Textiles. Our extensive array of woven fabrics is meticulously engineered to surpass industry benchmarks, guaranteeing unmatched quality and functionality with each weave. Whether you seek intricate patterns or enduring textures, our versatile solutions are customized to your exacting specifications. Collaborate with us and discover the transformative impact of premium woven fabrics on your creations.",
@@ -54,6 +55,4 @@ const data = [
     ],
     contactText: "Contact us today to explore your woven fabric needs or to request samples. We're enthusiastic about the opportunity to collaborate with you and provide top-tier quality fabrics perfectly suited for your projects."
   }
-];
-
-export default data;
+]

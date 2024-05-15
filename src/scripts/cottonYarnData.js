@@ -11,7 +11,7 @@ import img4 from "../assets/productImages/cotton/stock/img4.png"
 import img5 from "../assets/productImages/cotton/stock/img5.png"
 import img6 from "../assets/productImages/cotton/stock/img6.png"
 
-const data = [
+export const cottonData = [
   {
     headerTitle1: "Cotton Yarn",
     headerTitle2: "Harinila Textiles - Cotton Yarn Spinning",
@@ -55,7 +55,5 @@ const data = [
     ],
     Color: "#7dc391",
     contactText: "Contact us today to discuss your cotton yarn requirements or to request samples. We look forward to partnering with you and delivering the finest quality cotton yarn for your textile needs."
-  }
+  },
 ];
-
-export default data;

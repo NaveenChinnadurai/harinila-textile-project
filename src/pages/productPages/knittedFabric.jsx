@@ -1,10 +1,10 @@
-import knittedFabric from '../../scripts/knittedFabricData'
+import {knittedFabricData} from '../../scripts/knittedFabricData'
 import ProductPage from '../productPage'
 function KnittedFabric() {
     return (
         <>
             <ProductPage
-                data={knittedFabric[0]}
+                data={knittedFabricData[0]}
             />
         </>
     )
