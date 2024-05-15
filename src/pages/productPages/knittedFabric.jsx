@@ -1,17 +1,28 @@
+import ProductPage from '../productPage'
 
-import mainBanner from "../assets/productImages/knittedFabrics/knittedFabric.png"
-import banner1 from "../assets/productImages/knittedFabrics/img1.png"
-import banner2 from "../assets/productImages/knittedFabrics/img2.png"
-import banner3 from "../assets/productImages/knittedFabrics/img3.png"
+import mainBanner from "../../assets/productImages/knittedFabrics/knittedFabric.png"
+import banner1 from "../../assets/productImages/knittedFabrics/img1.png"
+import banner2 from "../../assets/productImages/knittedFabrics/img2.png"
+import banner3 from "../../assets/productImages/knittedFabrics/img3.png"
 
-import img1 from '../assets/productImages/knittedFabrics/stock/img1.png'
-import img2 from "../assets/productImages/knittedFabrics/stock/img2.png"
-import img3 from "../assets/productImages/knittedFabrics/stock/img3.png"
-import img4 from "../assets/productImages/knittedFabrics/stock/img4.png"
-import img5 from "../assets/productImages/knittedFabrics/stock/img5.png"
-import img6 from "../assets/productImages/knittedFabrics/stock/img6.png"
+import img1 from '../../assets/productImages/knittedFabrics/stock/img1.png'
+import img2 from "../../assets/productImages/knittedFabrics/stock/img2.png"
+import img3 from "../../assets/productImages/knittedFabrics/stock/img3.png"
+import img4 from "../../assets/productImages/knittedFabrics/stock/img4.png"
+import img5 from "../../assets/productImages/knittedFabrics/stock/img5.png"
+import img6 from "../../assets/productImages/knittedFabrics/stock/img6.png"
 
-export const knittedFabricData = [
+function KnittedFabric() {
+    return (
+        <>
+            <ProductPage
+                data={knittedFabricData[0]}
+            />
+        </>
+    )
+}
+
+const knittedFabricData = [
     {
         headerTitle1: " Knitted Fabric ",
         headerTitle2: "Harinila Textiles - Knitted fabric Spinning",
@@ -57,3 +68,5 @@ export const knittedFabricData = [
         contactText: "Get in touch with us today to explore your knitted fabric needs or to request samples. We're excited about the opportunity to collaborate with you and provide top-tier quality yarn perfectly suited for your knitting projects."
     }
 ]
+
+export default KnittedFabric
