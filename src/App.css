@@ -95,25 +95,22 @@
 }
 
 /* contact page */
-.contact-bg{
-    background: url("./assets/stockImg/world.jpg") center;
+.contact-banner{
+    background: url('./assets/contactPageStocks/banner.png') center no-repeat;
     background-size: cover;
-    height: fit-content;
 }
-input,textarea{
-    border: 1px solid rgb(141, 141, 141) !important;
-    background: hwb(0 93% 7% / 0.5) !important;
+input:focus{
+    outline: none;
 }
 textarea{
     height: 200px !important;
 }
-.contact-banner{
-    background:url('./assets/stockImg/ContactBanner.png') center no-repeat;
-    background-size: cover;
-}
 
 
 /* update section */
+.about-bg{
+    background-color:  rgba(147, 196, 232, 0.2);
+}
 .posters-container::-webkit-scrollbar{
     background-color: rebeccapurple;
 }
@@ -128,3 +125,23 @@ textarea{
 .h-100{
     height: 100%;
 }
+
+
+/* About Page STylings */
+.about-product-text{
+    opacity: 0;
+    transition: all 0.3s 200ms ease-in-out;
+}
+.about-product-card:hover .about-product-text{
+    opacity: 1;
+    z-index: 1;
+    cursor: pointer;
+}
+.about-product-card:hover .about-product-img{
+    filter: blur(10px);
+}
+
+.about-card-border {
+    border-radius: 500px !important;
+  }
+  

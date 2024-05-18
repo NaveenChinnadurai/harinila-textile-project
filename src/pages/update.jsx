@@ -44,23 +44,21 @@ function Update() {
                 </div>
             </div>
 
-            <div className='d-flex flex-columnmy-5 mb-3'>
-                <div className='d-flex flex-nowrap px-5 gap-3 overflow-auto align-items-center '>
-                    <div className='col-12 col-sm-5'>
-                        <img src={poster1} alt="Poster Image" className=' img-fluid rounded-4' />
-                    </div>
-                    <div className='col-12 col-sm-5'>
-                        <img src={poster2} alt="Poster Image" className=' img-fluid rounded-4' />
-                    </div>
-                    <div className='col-11 col-sm-5'>
-                        <img src={poster3} alt="Poster Image" className=' img-fluid rounded-4' />
-                    </div>
-                    <div className='col-6 col-sm-3'>
-                        <img src={poster4} alt="Poster Image" className=' img-fluid rounded-4' />
-                    </div>
+            <div className='d-flex flex-nowrap px-5 gap-3 overflow-x-scroll scrollbar-horizontal scrollbar-variant-primary align-items-center'>
+                <div className='col-12 col-sm-5'>
+                    <img src={poster1} alt="Poster Image" className=' img-fluid rounded-4' />
+                </div>
+                <div className='col-12 col-sm-5'>
+                    <img src={poster2} alt="Poster Image" className=' img-fluid rounded-4' />
+                </div>
+                <div className='col-11 col-sm-5'>
+                    <img src={poster3} alt="Poster Image" className=' img-fluid rounded-4' />
+                </div>
+                <div className='col-6 col-sm-3'>
+                    <img src={poster4} alt="Poster Image" className=' img-fluid rounded-4' />
                 </div>
             </div>
-            <ContactSection/>
+            <ContactSection />
         </div>
     )
 }

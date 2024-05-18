@@ -113,10 +113,7 @@ function Home() {
                         {
                             aboutCount.map((e, i) => {
                                 return (
-                                    <div key={i} className='col-5 p-3 mt-3 count-box-shadow rounded-3'>
-                                        <h2 className="lead fs-1 fw-bolder">{e.num}+</h2>
-                                        <p className="lead fs-6 fw-medium">{e.text} </p>
-                                    </div>
+                                    <CounterCard data={e} key={i} style="col-5 mt-3"/>
                                 )
                             })
                         }
@@ -132,4 +129,12 @@ function Home() {
     )
 }
 
+export const CounterCard = (props) => {
+    return (
+        <div key={props.key} className={`p-3 count-box-shadow rounded-3 ${props.style}`}>
+            <h2 className="lead fs-1 fw-bolder">{props.data.num}+</h2>
+            <p className="lead fs-6 fw-medium">{props.data.text} </p>
+        </div>
+    )
+}
 export default Home

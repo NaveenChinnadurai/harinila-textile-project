@@ -1,136 +1,119 @@
 import React from 'react'
-import chainIcon from '../assets/Icons/chainIcon.png'
-import icon1 from '../assets/Icons/icon1.png'
-import icon2 from '../assets/Icons/icon2.png'
-import icon3 from '../assets/Icons/icon3.png'
-import { FaFacebookSquare as FB, FaInstagram as IG, FaLinkedin as LinkedIn } from "react-icons/fa";
-import { FaXTwitter as X, FaWhatsapp as WA } from "react-icons/fa6";
-import { TiSocialGooglePlus as GPlus } from "react-icons/ti";
 import { Link } from 'react-router-dom'
-import formImg from '../assets/stockImg/contactBg.png'
-import product2 from '../assets/productImages/knittedFabrics/knittedFabric.jpg'
-import product3 from '../assets/productImages/wovenFabrics/wovenFabric.jpg'
-import ContactCard from '../components/contactCard'
-import ContactSection from '../components/contactCard'
+import Header from '../components/header'
+import fb from '../assets/Icons/facebook.png'
+import ln from '../assets/Icons/linkedin.png'
+import x from '../assets/Icons/twitter.png'
+import wa from '../assets/Icons/whatsapp.png'
+
+import { contactDetails } from '../scripts/data'
 const logo = [
   {
-    icon: <FB />,
+    icon: fb,
     url: ""
   },
   {
-    icon: <IG />,
+    icon: ln,
     url: ""
   },
   {
-    icon: <GPlus />,
+    icon: x,
     url: ""
   },
   {
-    icon: <LinkedIn />,
-    url: ""
-  },
-  {
-    icon: <X />,
-    url: ""
-  },
-  {
-    icon: <WA />,
+    icon: wa,
     url: ""
   },
 ]
 function Contact() {
   return (
-    <div className='p-0 pt-5'>
-      <div className='d-flex flex-column align-item-center justify-content-center contact-banner py-5'>
-        <div className='col-10 mx-auto py-5 d-flex flex-column gap-2 text-white'>
-          <h2 className="lead display-5 fw-bold text-center">We're Here to Help!</h2>
-          <p className='lead fs-5 fw-medium text-center'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, incidunt! Dolorem architecto totam libero earum officiis fuga, consequuntur optio necessitatibus.</p>
-          <div className="w-fit p-2 d-flex flex-column flex-sm-row gap-4 gap-md-5 mx-auto">
-            <span className='btn btn-outline-light px-4 py-2 rounded-2 fw-medium'>Product Support</span>
-            <span className='btn btn-outline-light px-4 py-2 rounded-2 fw-medium'>Customer Support</span>
+    <div className='p-0'>
+      <Header textSize="display-1" text="Contact Us" />
+      <Header
+        textSize="fs-5 text-black col-12 col-sm-11 col-md-6 mx-auto mt-0"
+        text="Any question or remarks? Just write us a message!"
+      />
+      <div className='col-11 mx-auto row contact-banner position-relative h-100vh w-100vw text-white rounded-5 p-5 my-4'>
+        <div className="ps-4 border-start border-5 col-12 col-sm-8 col-md-6 d-flex flex-column gap-2 align-self-end z-10">
+          <h2 className="lead display-6 fw-medium ">Get in Touch</h2>
+          <p className="lead fs-4 fw-normal">contact us using the form below or through any of our contact methods. We’re here to help and look forward to hearing from you!!</p>
+        </div>
+      </div>
+
+      <div className='col-11 mx-auto row d-flex flex-column flex-md-row mt-5'>
+        <div className="col-md-5 d-flex flex-column gap-5 bg-primary-1 p-5 text-white rounded-4">
+          <h2 className="lead fs-3 fw-medium mb-3">Contact Information</h2>
+          <div className="d-flex flex-column gap-4">
+            {
+              contactDetails.map((e, i) => {
+                const Icon = e.icon
+                return (
+                  <div className='d-flex gap-2 col-8' key={i}>
+                    <span className='fs-5'><Icon /></span>
+                    <p className="lead fs-5 fw-normal">{e.text}</p>
+                  </div>
+                )
+              })
+            }
+          </div>
+        </div>
+        <div className='col-11 mx-auto col-md-7 row py-4 p-sm-5 d-flex justify-content-end'>
+          <div className='col-12 col-sm-6  d-flex flex-column gap-1 mb-3'>
+            <label htmlFor="first-name" className='lead fs-5 fw-medium'>First Name</label>
+            <input type="text" name="First Name" id="first-name" className='lead border-none fs-6 p-2 border-0 bg-transparent border-bottom border-secondary fw-normal' />
+          </div>
+          <div className='col-12 col-sm-6 d-flex flex-column gap-1 mb-3'>
+            <label htmlFor="first-name" className='lead fs-5 fw-medium'>Last Name</label>
+            <input type="text" name="First Name" id="first-name" className='lead border-none fs-6 p-2 border-0 bg-transparent border-bottom border-secondary fw-normal' />
+          </div>
+          <div className='col-12 col-sm-6 d-flex flex-column gap-1 mb-3'>
+            <label htmlFor="first-name" className='lead fs-5 fw-medium'>Email</label>
+            <input type="text" name="First Name" id="first-name" className='lead border-none fs-6 p-2 border-0 bg-transparent border-bottom border-secondary fw-normal' />
+          </div>
+          <div className='col-12 col-sm-6 d-flex flex-column gap-1 mb-3'>
+            <label htmlFor="first-name" className='lead fs-5 fw-medium'>Phone Number</label>
+            <input type="text" name="First Name" id="first-name" className='lead border-none fs-6 p-2 border-0 bg-transparent border-bottom border-secondary fw-normal' />
+          </div>
+          <div className='col-12 d-flex flex-column gap-1 mb-3'>
+            <label htmlFor="first-name" className='lead fs-5 fw-medium'>Phone Number</label>
+            <input type="text" name="First Name" id="first-name" className='lead border-none fs-6 p-2 border-0 bg-transparent border-bottom border-secondary fw-normal' />
+          </div>
+          <div className='col-10 d-flex justify-content-end mt-5'>
+            <span className='btn-bg w-fit h-fit px-4 py-2 text-white rounded-1 justify-self-end'>Send Messege</span>
           </div>
         </div>
       </div>
-      <div className='row p-0 col-12 py-2 my-3 d-flex gap-2 justify-content-center align-items-center'>
-        <h2 className="mb-2 lead display-6 title-primary-2 text-center fw-bold">Get in Touch With Us</h2>
-        <ContactSection/>
-      </div>
-      <div className='col-12 m-0 mx-auto d-flex flex-column flex-md-row justify-content-evenly justify-content-sm-start align-items-center p-2 contact-bg px-md-5 my-3'>
-        <div className="col-12 col-sm-8 col-md-6 py-3 px-1 px-md-0 row d-flex justify-content-center gap-2">
-          <h2 className="lead fs-1 fw-bold d-flex align-items-center title-primary-5 d-flex">
-            Let's Connect
-            <img src={chainIcon} alt="Chain Icon" height={40} />
-          </h2>
-          <div className='col-12 col-lg-10 p-2'>
-            <div className="form-floating mb-3">
-              <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
-              <label htmlFor="floatingInput">Name</label>
-            </div>
-            <div className='d-flex gap-3 justify-content-between'>
-              <div className="col form-floating mb-3">
-                <input type="text" className="form-control" id="floatingInput" placeholder="name@example.com" />
-                <label htmlFor="floatingInput">Mobile No.</label>
-              </div>
-              <div className="col form-floating mb-3">
-                <input type="text" className="form-control" id="floatingInput" placeholder="name@example.com" />
-                <label htmlFor="floatingInput">Location</label>
-              </div>
-            </div>
-            <div className="form-floating mb-3">
-              <input type="Email" className="form-control" id="floatingPassword" placeholder="Password" />
-              <label htmlFor="floatingPassword">Email address</label>
-            </div>
-            <div className="form-floating">
-              <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
-              <label htmlFor="floatingTextarea2" >Your Queries Here</label>
-            </div>
-            <div className='bg-green col-12 text-center mt-4 mx-auto w-50 p-2 fs-5 '>Let's Connect</div>
-          </div>
-        </div>
-        <div className="col-5 d-flex justify-content-center align-items-center d-none d-lg-flex">
-          <img src={formImg} alt="Form Image" className=' img-fluid' />
+      <div className='row col-12 mt-5 d-flex justify-content-between about-bg'>
+        <div className='col-md-6'>d</div>
+        <div className='col-md-6 bg-white p-4 rounded-5'>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0858433527073!2d80.15470157388758!3d13.030205213593108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5260e2aec0daa9%3A0xee3c2d6c04b9479f!2sHARINILA%20TEXTILES%20OPC%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1716020906033!5m2!1sen!2sin"
+            height={400}
+            style={{border:"0"}}
+            allowFullScreen={false}
+            loading="lazy"
+            aria-hidden="false"
+            tabIndex="0"
+            className='rounded-5 col-12 col-md-12'
+            referrerPolicy="no-referrer-when-downgrade"/>
         </div>
       </div>
       <div className="d-flex flex-column col-10 mx-auto gap-2 py-4">
         <h2 className="lead display-6 fw-medium text-center">Connect With Us Through Social Media</h2>
-        <p className="lead fs-4 fs-medium text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, quasi nobis velit sed consequatur laborum labore vitae animi ducimus fugit, ut a unde, nisi nemo.</p>
-        <div className='d-flex gap-3 justify-content-center'>
+        <div className='d-flex gap-5 justify-content-center'>
           {
             logo.map((e, i) => {
               return (
-                <Link className='fs-1 text-dark' key={i}>{e.icon}</Link>
+                <Link className='fs-1 text-dark' key={i}>
+                  <img src={e.icon} alt="Contact Icon" height={50} width={50} />
+                </Link>
               )
             })
           }
         </div>
       </div>
-      <div className="d-flex flex-wrap justify-content-center align-items-center p-3 gap-4">
-        {
-          products.map((e, i) => {
-            return (
-              <div key={i} className="col-10 col-sm-5 col-md-3 d-flex flex-column justify-content-center align-items-center gap-3 border border-1 p-2">
-                <img src={e.img} alt={e.title} className='img-fluid' />
-                <h2 className="lead fs-3 fw-medium text-center pb-3">{e.title}</h2>
-              </div>
-            )
-          })
-        }
-      </div>
     </div>
   )
 }
-const products = [
-  {
-    img: product3,
-    title: "Cotton yarn"
-  },
-  {
-    img: product2,
-    title: "Knitted Fabrics"
-  },
-  {
-    img: product3,
-    title: "Woven Fabrics"
-  },
-]
+
 export default Contact

@@ -11,6 +11,7 @@ import CottonYarn from './pages/productPages/cottonYarn';
 import KnittedFabric from './pages/productPages/knittedFabric';
 import WovenFabrics from './pages/productPages/wovenFabric';
 import Update from './pages/update';
+import About from './pages/about';
 function App() {
 
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path='/wovenfabric' element={<WovenFabrics/>}/>
         <Route path='/contactUs' element={<Contact/>}/>
         <Route path='/updates' element={<Update/>}/>
+        <Route path='/about' element={<About/>}/>
       </Routes>
       <Footer />
     </div>
