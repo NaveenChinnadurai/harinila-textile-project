@@ -6,7 +6,7 @@ import Home from './pages/home';
 import Footer from './components/footer';
 import { Link, Route, Routes } from 'react-router-dom';
 import Contact from './pages/contact';
-import WA from './assets/Icons/whatsapp.png'
+import WA from './assets/Icons/socialIcons/whatsapp.png'
 import CottonYarn from './pages/productPages/cottonYarn';
 import KnittedFabric from './pages/productPages/knittedFabric';
 import WovenFabrics from './pages/productPages/wovenFabric';

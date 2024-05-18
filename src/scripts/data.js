@@ -1,6 +1,6 @@
-import wovenFabric from '../assets/productImages/wovenFabric.png'
-import cottonYarn from '../assets/productImages/cottonYarn.png'
-import knittedFabric from '../assets/productImages/knittedFabric.png'
+import wovenFabric from '../assets/mainAssets/wovenFabric.png'
+import cottonYarn from '../assets/mainAssets/cottonYarn.png'
+import knittedFabric from '../assets/mainAssets/knittedFabric.png'
 
 import poster1 from "../assets/posters/poster1.png"
 import poster2 from "../assets/posters/poster2.png"

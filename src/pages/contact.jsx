@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Header from '../components/header'
-import fb from '../assets/Icons/facebook.png'
-import ln from '../assets/Icons/linkedin.png'
-import x from '../assets/Icons/twitter.png'
-import wa from '../assets/Icons/whatsapp.png'
+import fb from '../assets/Icons/socialIcons/facebook.png'
+import ln from '../assets/Icons/socialIcons/linkedin.png'
+import x from '../assets/Icons/socialIcons/twitter.png'
+import wa from '../assets/Icons/socialIcons/whatsapp.png'
 
 import { contactDetails } from '../scripts/data'
 const logo = [

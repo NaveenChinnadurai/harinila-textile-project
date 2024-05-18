@@ -1,18 +1,18 @@
 import ProductPage from '../productPage'
 
 
-import mainBanner from "../../assets/productImages/cotton/cottonBanner.png"
+import mainBanner from "../../assets/banners/cottonBanner.png"
 
-import banner1 from "../../assets/productImages/cotton/img1.png"
-import banner2 from "../../assets/productImages/cotton/img2.png"
-import banner3 from "../../assets/productImages/cotton/img3.png"
+import banner1 from "../../assets/banners/cottonBanner/img1.png"
+import banner2 from "../../assets/banners/cottonBanner/img2.png"
+import banner3 from "../../assets/banners/cottonBanner/img3.png"
 
-import img1 from "../../assets/productImages/cotton/stock/img1.png"
-import img2 from "../../assets/productImages/cotton/stock/img2.png"
-import img3 from "../../assets/productImages/cotton/stock/img3.png"
-import img4 from "../../assets/productImages/cotton/stock/img4.png"
-import img5 from "../../assets/productImages/cotton/stock/img5.png"
-import img6 from "../../assets/productImages/cotton/stock/img6.png"
+import img1 from "../../assets/stocks/cottonStock/img1.png"
+import img2 from "../../assets/stocks/cottonStock/img2.png"
+import img3 from "../../assets/stocks/cottonStock/img3.png"
+import img4 from "../../assets/stocks/cottonStock/img4.png"
+import img5 from "../../assets/stocks/cottonStock/img5.png"
+import img6 from "../../assets/stocks/cottonStock/img6.png"
 
 function CottonYarn() {
     return (

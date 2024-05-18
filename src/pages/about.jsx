@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../components/header';
 
-import mission from '../assets/aboutImg/missionImg.png';
-import img1 from '../assets/aboutImg/img.png';
+import mission from '../assets/aboutImg/illustration_1.png';
+import img1 from '../assets/aboutImg/illustration_2.png';
 import banner1 from '../assets/aboutImg/banner1.png';
 import banner2 from '../assets/aboutImg/banner2.png';
 import banner3 from '../assets/aboutImg/banner3.png';

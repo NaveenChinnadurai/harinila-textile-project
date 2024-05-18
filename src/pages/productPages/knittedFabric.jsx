@@ -1,16 +1,16 @@
 import ProductPage from '../productPage'
 
-import mainBanner from "../../assets/productImages/knittedFabrics/knittedFabric.png"
-import banner1 from "../../assets/productImages/knittedFabrics/img1.png"
-import banner2 from "../../assets/productImages/knittedFabrics/img2.png"
-import banner3 from "../../assets/productImages/knittedFabrics/img3.png"
+import mainBanner from "../../assets/banners/knittedFabric.png"
+import banner1 from "../../assets/banners/knittedBanner/img1.png"
+import banner2 from "../../assets/banners/knittedBanner/img2.png"
+import banner3 from "../../assets/banners/knittedBanner/img3.png"
 
-import img1 from '../../assets/productImages/knittedFabrics/stock/img1.png'
-import img2 from "../../assets/productImages/knittedFabrics/stock/img2.png"
-import img3 from "../../assets/productImages/knittedFabrics/stock/img3.png"
-import img4 from "../../assets/productImages/knittedFabrics/stock/img4.png"
-import img5 from "../../assets/productImages/knittedFabrics/stock/img5.png"
-import img6 from "../../assets/productImages/knittedFabrics/stock/img6.png"
+import img1 from '../../assets/stocks/knittedStocks/img1.png'
+import img2 from "../../assets/stocks/knittedStocks/img2.png"
+import img3 from "../../assets/stocks/knittedStocks/img3.png"
+import img4 from "../../assets/stocks/knittedStocks/img4.png"
+import img5 from "../../assets/stocks/knittedStocks/img5.png"
+import img6 from "../../assets/stocks/knittedStocks/img6.png"
 
 function KnittedFabric() {
     return (

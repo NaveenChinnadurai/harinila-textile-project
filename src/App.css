@@ -96,7 +96,7 @@
 
 /* contact page */
 .contact-banner{
-    background: url('./assets/contactPageStocks/banner.png') center no-repeat;
+    background: url('./assets/banners/contactBanner.png') center no-repeat;
     background-size: cover;
 }
 input:focus{

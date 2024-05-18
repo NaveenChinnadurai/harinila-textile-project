@@ -1,10 +1,8 @@
 import React from 'react'
 
-import bannerImg from '../assets/stockImg/homeBanner.png'
-import aboutImg from '../assets/stockImg/aboutImg.png'
-import aboutImg1 from '../assets/stockImg/aboutImg1.png'
-import updateDecor1 from '../assets/decors/updatesDecor1.png'
-import updateDecor2 from '../assets/decors/updatesDecor2.png'
+import bannerImg from '../assets/banners/homeBanner.png'
+import aboutImg from '../assets/mainAssets/aboutImg.png'
+import aboutImg1 from '../assets/mainAssets/aboutImg1.png'
 
 import Header from '../components/header';
 import ContactSection from '../components/contactCard';
