@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
-import bannerImg from '../assets/banners/homeBanner.png'
+import Carousel from 'react-bootstrap/Carousel';
+
 import aboutImg from '../assets/mainAssets/aboutImg.png'
 import aboutImg1 from '../assets/mainAssets/aboutImg1.png'
 
@@ -8,24 +9,43 @@ import Header from '../components/header';
 import ContactSection from '../components/contactCard';
 
 import { Link } from 'react-router-dom';
-import { IoIosArrowForward as Arrow } from "react-icons/io";
+import { IoIosArrowForward as ArrowRight, IoIosArrowBack as ArrowLeft } from "react-icons/io";
 import { IoArrowForwardCircleOutline as RightArrow } from "react-icons/io5";
 
-import { productInfo, aboutCount, posters } from '../scripts/data'
+import { productInfo, aboutCount, posters, carouselData } from '../scripts/data'
 
 function Home() {
+    const carouselRef = useRef(null);
+    const handleSlide = (event) => {
+        if (event.direction === 'right' && event.target.activeIndex === 0) {
+            event.direction = 'left';
+        }
+    };
     return (
         <div className='m-0 row d-flex flex-column'>
             <div className="row col-md-10 mx-auto d-flex flex-column">
                 <Header textSize="display-1" text="Harnila Textiles" />
-                <img src={bannerImg} alt="Banner Image" className=' img-fluid' />
-                <h1 className="col-md-10 col-12 lead display-6 fw-bold text-center mx-auto mt-4 title-primary-1">Welcome to Our Woven Fabric mills Where Quality Meets Styles</h1>
-                <p className="lead fs-5 title-primary-3 fw-medium text-center m-0">Harinila Weaves the Global with innovation</p>
-                <div className="d-flex gap-2 justify-content-center align-items-center bg-green mx-auto my-2">
-                    <span>Get Started </span>
-                    <span className='d-flex'><Arrow /></span>
-                </div>
             </div>
+            <Carousel
+                ref={carouselRef}
+                interval={2500}
+                onSlide={handleSlide}
+                prevIcon={<ArrowLeft className='text-black display-4 mt-0' />}
+                nextIcon={<ArrowRight className='text-black display-4 mt-0' />}>
+                {
+                    carouselData.map((e, i) => {
+                        return (
+                            <Carousel.Item className=' py-4' key={i}>
+                                <div className='col-10 mx-auto'>
+                                    <img src={e.img} alt="Banner Image" className=' img-fluid' />
+                                    <h1 className="col-md-10 col-12 lead display-6 fw-bold text-center mx-auto mt-4 title-primary-1">{e.title}</h1>
+                                    <p className="lead fs-5 title-primary-3 fw-medium text-center m-0">{e.text}</p>
+                                </div>
+                            </Carousel.Item>
+                        )
+                    })
+                }
+            </Carousel>
             <div className="row col-12 px-0 mx-auto d-flex flex-column flex-md-row justify-content-evenly justify-content-ld-between align-items-center my-4">
                 <div className='col-12 col-md-7 col-lg-6 d-flex flex-column gap-2'>
                     <h2 className="lead fs-3 fw-bold title-primary-2">WHAT WE DO</h2>
@@ -66,16 +86,7 @@ function Home() {
                     }
                 </div>
             </div>
-            {/*             <div className='my-4 p-0 row d-flex justify-content-between update-decor align-items-center'>
-                <div className='col-1 col-sm-3 col-md-2 p-0 d-flex'>
-                    <img src={updateDecor1} alt="update decors" className='img-fluid'/>
-                </div>
-                <h2 className='col-6 text-center h-fit lead title-primary-2 fw-bold display-6'>OUR UPDATES</h2>
-                <div className='col-2 col-sm-4 col-md-3 p-0 d-flex align-items-end'>
-                    <img src={updateDecor2} alt="update decors" className='img-fluid'/>
-                </div>
-            </div>*/}
-            <h2 className="lead text-center title-primary-7 mt-5 fw-bolder fs-1">UPDATES</h2>
+            <h2 className="lead text-center title-primary-7 mt-5 fw-bolder fs-1">OUR UPDATES</h2>
             <div className="row col-12 my-3 p-2 gap-2 gap-md-4 d-flex justify-content-lg-center flex-nowrap overflow-auto">
                 {
                     posters.map((e, i) => {
@@ -111,7 +122,7 @@ function Home() {
                         {
                             aboutCount.map((e, i) => {
                                 return (
-                                    <CounterCard data={e} key={i} style="col-5 mt-3"/>
+                                    <CounterCard data={e} key={i} style="col-5 mt-3" />
                                 )
                             })
                         }

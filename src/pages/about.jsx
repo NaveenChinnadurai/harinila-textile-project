@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../components/header';
 
-import mission from '../assets/aboutImg/illustration_1.png';
-import img1 from '../assets/aboutImg/illustration_2.png';
+import goal from '../assets/aboutImg/illustration_1.png';
+import mission from '../assets/aboutImg/illustration_2.png';
 import banner1 from '../assets/aboutImg/banner1.png';
 import banner2 from '../assets/aboutImg/banner2.png';
 import banner3 from '../assets/aboutImg/banner3.png';
@@ -97,7 +97,7 @@ const About = () => {
         <h2 className="col-12 col-md-5 mx-auto lead fs-1 fw-bold title-primary-4 text-center">Opportunities We See in Textiles in general</h2>
         <div className='col-12 col-md-10 row d-flex justify-content-around align-items-center about-bg py-sm-5 px-md-3 pb-4 rounded-5 mx-auto'>
           <div className='col-12 col-sm-5 col-md-4 p-5 p-sm-0 '>
-            <img src={img1} alt="Mission Image" className='img-fluid' />
+            <img src={goal} alt="Mission Image" className='img-fluid' />
           </div>
           <p className='col-12 col-sm-6 col-md-7 lead fs-4 fw-normal'>
             India is the Major producer of medium Staple cotton Top exporter of cotton yarn in the world Indian Companies are having Vertical setup with diversified portfolio.

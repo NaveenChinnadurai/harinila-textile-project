@@ -145,3 +145,9 @@ textarea{
     border-radius: 500px !important;
   }
   
+
+  /* carousel stylings */
+
+  .carousel-control-prev-icon{
+    background-color: black;
+  }

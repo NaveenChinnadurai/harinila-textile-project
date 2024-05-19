@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../components/header'
 import { posters } from '../scripts/data'
-
+import update from '../assets/Icons/updateSoon.png'
 import poster1 from '../assets/posters/poster4.png'
 import poster2 from '../assets/posters/poster5.png'
 import poster3 from '../assets/posters/poster6.png'
@@ -36,6 +36,9 @@ function Update() {
 
             <div className="d-flex justify-content-center my-3 gap-1 align-items-center">
                 <h2 className="lead display-6 fw-medium  title-primary-7">New Updates Soon</h2>
+                <div>
+                    <img src={update} alt="Updates Icon" width={50} height={50} />
+                </div>
             </div>
 
             <div className='d-flex flex-nowrap px-5 gap-3 overflow-x-scroll scrollbar-horizontal scrollbar-variant-primary align-items-center'>
